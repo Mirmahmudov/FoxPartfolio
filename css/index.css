@@ -9,6 +9,10 @@
 
 .container {
   max-width: 1200px;
+<<<<<<< HEAD
+}
+/*# sourceMappingURL=index.css.map */
+=======
   margin: 0 auto;
 }
 
@@ -828,3 +832,4 @@ main .testimonial__dot--active {
   color: #FFFFFF;
   font-weight: 600;
 }/*# sourceMappingURL=index.css.map */
+>>>>>>> master
