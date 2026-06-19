@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$shrift-mont: "Montserrat", sans-serif;
+$shrift-anton: "Anton", sans-serif;
+;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url(../imgs/Bg.png);
+    background-color: rgba(17, 18, 20, 1);
+    width: 100%;
+}
+
+
+nav {
+    padding: 20px 0px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        list-style: none;
+        cursor: pointer;
+
+        :hover {
+            color: #FE390C;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+    }
+
+    li {
+        color: #A9A9AA;
+        font-size: 12px;
+        font-weight: 600;
+        font-family: $shrift-mont;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: 3px solid #FE390C;
+        background-color: black;
+        color: #FE390C;
+        border-radius: 4px;
+    }
+
+}
+
+.hero {
+    background-image: url(../imgs/img.png);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    margin-top: 100px;
+    margin-left: 75px;
+    color: rgba(255, 255, 255, 0.02);
+
+    h1 {
+        font-size: 130px;
+        font-weight: 400;
+        color: #FFFFFF;
+        text-align: center;
+        align-content: center;
+        margin-top: 150px;
+        font-family: $shrift-anton;
+    }
+
+    h3 {
+        color: white;
+        font-family: $shrift-mont;
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 700;
+        text-align: center;
+
+        span {
+            color: #A9A9AA;
+        }
+    }
+}
+
+main {
+    .sarlavha {
+        display: flex;
+        align-items: center;
+        margin-left: 530px;
+        gap: 30px;
+    }
+
+    .one {
+        .son {
+            color: #FE390C;
+            font-size: 80px;
+            font-weight: 400;
+            font-family: $shrift-anton;
+
+        }
+    }
+
+    .matn {
+        font-size: 40px;
+        font-weight: 400;
+        font-family: $shrift-anton;
+    }
+
+    .icons {
+        width: 230px;
+        height: 260px;
+        background-color: rgba(247, 247, 247, 1);
+        padding-left: 15px;
+
+        h3 {
+            color: rgba(17, 18, 20, 1);
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $shrift-mont;
+        }
+
+        p {
+            width: 179px;
+            height: 96px;
+            color: rgba(169, 169, 170, 1);
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            margin-top: 45px;
+        }
+    }
+
+    .icon_card {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 80px;
+    }
+
+    .icons4 {
+        width: 230px;
+        height: 260px;
+        background-color: rgba(254, 57, 12, 1);
+        padding-left: 15px;
+
+        p {
+            width: 179px;
+            height: 96px;
+            color: white;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+            margin-top: 45px;
+        }
+
+        h3 {
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            font-family: $shrift-mont;
+        }
+    }
+
+    .two {
+        background-color: rgba(247, 247, 247, 1);
+        padding: 35px 0px;
+
+        .sarlavha2 {
+            display: flex;
+            align-items: center;
+            margin-left: 530px;
+            gap: 30px;
+        }
+
+        .son {
+            color: #FE390C;
+            font-size: 80px;
+            font-weight: 400;
+            font-family: $shrift-anton;
+
+        }
+    }
+
+    .matn {
+        font-size: 40px;
+        font-weight: 400;
+        font-family: $shrift-anton;
+    }
+
+    .brands {
+        display: flex;
+        gap: 95px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: 75px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+
+}
+
+.banner{
+    background-color: black;
+    width: 1200px;
+    height: 335px;
+
+    h1 {
+        color: white;
+        padding-top: 85px;
+        padding-left: 310px;
+        font-size: 40px;
+        font-weight: 400;
+        font-family: $shrift-anton;
+    }
+
+    .reklama {
+        margin-left: 100px;
+        background-color: rgba(254, 57, 12, 1);
+        padding: 10px 18px;
+    
+
+
+
+}
