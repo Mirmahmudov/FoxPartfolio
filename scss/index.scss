@@ -1,9 +1,1017 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
   max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url(../imgs/Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  nav {
+    margin: 25px 0px;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+
+      button {
+        color: #FE390C;
+        background-color: black;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        border: solid 1.5px #FE390C;
+        padding: 10px;
+        border-radius: 5px;
+
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        list-style: none;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+
+        li {
+          color: #A9A9AA;
+
+          span {
+            color: #FE390C;
+          }
+        }
+      }
+    }
+  }
+
+  .hero {
+
+    .container {
+      color: white;
+      padding: 190px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .h1 {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 24px;
+        leading-trim: NONE;
+        line-height: 30px;
+        letter-spacing: -4%;
+
+        span {
+          color: #FE390C;
+        }
+      }
+
+      .h2 {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 130px;
+        leading-trim: NONE;
+        line-height: 154px;
+        letter-spacing: 1.5%;
+        vertical-align: middle;
+        text-transform: uppercase;
+
+      }
+
+      p {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 30px;
+        letter-spacing: -4%;
+
+      }
+
+      button {
+        margin-top: 10px;
+        font-family: Montserrat;
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 12px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        background-color: #FE390C;
+        padding: 15px;
+        border: none;
+        border-radius: 4px;
+      }
+    }
+  }
+
+
+}
+
+main {
+  .sctOne {
+    .container {
+      margin: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .maininfo {
+        h1 {
+          font-family: "Anton", sans-serif;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 40px;
+          leading-trim: NONE;
+          line-height: 100%;
+          letter-spacing: 2%;
+          vertical-align: middle;
+          text-transform: uppercase;
+
+          span {
+            font-family: Anton;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 80px;
+            leading-trim: NONE;
+            line-height: 100%;
+            letter-spacing: 2%;
+            vertical-align: middle;
+            text-transform: uppercase;
+            color: #FE390C;
+          }
+
+
+        }
+
+        p {
+          font-family: Montserrat;
+          font-weight: 500;
+          font-style: Medium;
+          font-size: 14px;
+          leading-trim: NONE;
+          line-height: 32px;
+          letter-spacing: -2%;
+          width: 429px;
+          color: #A9A9AA;
+        }
+      }
+
+    }
+  }
+
+  .sctTwo {
+    background-color: #F7F7F7;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      padding: 70px
+    }
+  }
+
+  .sctThree {
+    $color-orange: #FF4A57;
+    $color-white: #FFFFFF;
+
+    .project-banner {
+
+      background-image: url(../imgs/logoi.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-color: #121212;
+
+
+      width: 100%;
+      max-width: 960px;
+      margin: 40px auto;
+      border-radius: 4px;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 55px 40px;
+      box-sizing: border-box;
+
+      &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        max-width: 580px;
+      }
+
+      &__title {
+        color: $color-white;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.25;
+        margin: 0;
+        letter-spacing: 0.5px;
+      }
+
+      &__btn {
+        background-color: $color-orange;
+        color: $color-white;
+        padding: 12px 28px;
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 4px;
+        letter-spacing: 0.8px;
+        margin-top: 5px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #e03e4a;
+          transform: translateY(-1px);
+        }
+      }
+
+      &__download {
+        color: #9c9c9c;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 5px;
+        transition: color 0.2s ease;
+
+        svg {
+          color: $color-orange;
+        }
+
+        &:hover {
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .sct4 {
+
+    $color-primary: #FE390C;
+    $color-card-bg: #F9F9F9;
+    $color-title: #121212;
+    $color-text: #A0A0A0;
+
+    .services-grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      width: 100%;
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+
+    .service-card {
+      background-color: $color-card-bg;
+
+
+      width: 270px;
+      min-height: 320px;
+      padding: 40px 25px;
+      box-sizing: border-box;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+
+      &__icon-placeholder {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color-primary;
+        transition: color 0.3s ease;
+
+
+        img,
+        svg {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      &__title {
+        color: $color-title;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 0 15px 0;
+        line-height: 1.2;
+        transition: color 0.3s ease;
+      }
+
+      &__text {
+        color: $color-text;
+        font-size: 14px;
+        line-height: 1.6;
+        margin: 0;
+        transition: color 0.3s ease;
+      }
+
+
+      &:hover {
+        background-color: $color-primary;
+
+        .service-card__icon-placeholder {
+          color: #FFFFFF;
+
+
+          svg {
+            stroke: #FFFFFF;
+          }
+        }
+
+        .service-card__title {
+          color: #FFFFFF;
+        }
+
+        .service-card__text {
+          color: rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+  }
+
+  .info {
+    margin: 20px;
+    text-align: center;
+
+    span {
+      font-family: Anton;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 80px;
+      leading-trim: NONE;
+      line-height: 100%;
+      letter-spacing: 2%;
+      vertical-align: middle;
+      text-transform: uppercase;
+      color: #FE390C;
+
+    }
+
+    h1 {
+      font-family: Anton;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 40px;
+      leading-trim: NONE;
+      line-height: 100%;
+      letter-spacing: 2%;
+      vertical-align: middle;
+      text-transform: uppercase;
+
+    }
+  }
+
+  .sct5 {
+    $color-primary: #FF4A57; 
+    $color-dark: #121212;
+    $color-gray-text: #9c9c9c;
+    $color-placeholder: #EAEAEA;
+
+    .portfolio {
+      width: 100%;
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 20px;
+      box-sizing: border-box;
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      &__title-box {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+      }
+
+      &__number {
+        color: $color-primary;
+        font-size: 48px;
+        font-weight: 800;
+      }
+
+      &__title {
+        color: $color-dark;
+        font-size: 32px;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      &__filters {
+        display: flex;
+        gap: 25px;
+      }
+
+      &__filter {
+        color: $color-gray-text;
+        font-size: 13px;
+        font-weight: 600;
+        text-decoration: none;
+
+        &--active {
+          color: $color-primary;
+          border: 1px solid $color-primary;
+          padding: 8px 18px;
+          border-radius: 4px;
+        }
+      }
+
+      &__nav-buttons {
+        display: flex;
+        gap: 12px;
+      }
+
+      &__nav-btn {
+        width: 40px;
+        height: 40px;
+        border: none;
+        background-color: $color-primary;
+        cursor: pointer;
+        border-radius: 4px;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 8px;
+          height: 8px;
+          border-top: 2px solid #ffffff;
+          border-right: 2px solid #ffffff;
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+        }
+
+        &--left::before {
+          transform: translate(-30%, -50%) rotate(-135deg);
+        }
+
+        &--right::before {
+          transform: translate(-70%, -50%) rotate(45deg);
+        }
+      }
+
+      &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+    }
+
+    .portfolio-card {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: $color-placeholder;
+      cursor: pointer;
+
+
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.4s ease;
+      }
+
+      &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      &__project-title {
+        color: #ffffff;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0 0 8px 0;
+      }
+
+      &__project-category {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 14px;
+        margin: 0;
+      }
+
+
+      &:hover {
+        .portfolio-card__img {
+          transform: scale(1.05);
+        }
+
+        .portfolio-card__overlay {
+          opacity: 1;
+        }
+      }
+    }
+
+    .portfolio__pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 35px;
+
+      .portfolio__dot {
+        width: 16px;
+        height: 4px;
+        background-color: #EAEAEA;
+        border-radius: 2px;
+
+        &--active {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+
+  $color-orange: #FF4A57; 
+  $color-dark: #121212; 
+  $color-gray: #8a8a8a; 
+  $color-bg-placeholder: #eaeaea; 
+
+  .testimonial {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 60px; 
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+
+    &__image-box {
+      width: 370px;
+      height: 370px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: $color-bg-placeholder;
+
+      @media (max-width: 480px) {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+
+  
+    &__content {
+      flex-grow: 1;
+      position: relative;
+    }
+
+    &__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    &__title-box {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    &__number {
+      color: $color-orange;
+      font-size: 44px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    &__title {
+      color: $color-dark;
+      font-size: 32px;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    &__counter {
+      color: $color-orange;
+      font-size: 18px;
+      font-weight: 700;
+
+      &--total {
+        color: #ccc;
+      }
+    }
+
+    &__quote-mark {
+      color: $color-orange;
+      font-size: 60px;
+      font-family: Georgia, serif;
+      line-height: 1;
+      margin-top: -10px;
+      margin-bottom: 10px;
+    }
+
+    &__text {
+      color: $color-dark;
+      font-size: 16px;
+      line-height: 1.6;
+      margin: 0 0 30px 0;
+      max-width: 550px;
+    }
+
+    &__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 25px;
+    }
+
+    &__name {
+      color: $color-orange;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 5px 0;
+    }
+
+    &__role {
+      color: $color-gray;
+      font-size: 14px;
+    }
+    &__nav {
+      display: flex;
+      gap: 12px;
+    }
+
+    &__btn {
+      width: 40px;
+      height: 40px;
+      border: none;
+      background-color: $color-orange;
+      cursor: pointer;
+      border-radius: 4px;
+      position: relative;
+      transition: background-color 0.2s;
+
+      &::before {
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        display: inline-block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+
+      &--left::before {
+        transform: translate(-30%, -50%) rotate(-135deg);
+      }
+
+      &--right::before {
+        transform: translate(-70%, -50%) rotate(45deg);
+      }
+
+      &:hover {
+        background-color: darken($color-orange, 8%);
+      }
+    }
+
+    &__pagination {
+      display: flex;
+      gap: 6px;
+    }
+
+    &__dot {
+      width: 14px;
+      height: 3px;
+      background-color: #EAEAEA;
+      border-radius: 2px;
+
+      &--active {
+        background-color: $color-orange;
+      }
+    }
+  }
+}$color-orange: #FF4A57;      // Figmadagi qizil-to'q sariq rang
+$color-bg-dark: #121212;     // Blokning qora fon rangi
+$color-input-bg: #1A1A1A;    // Input va Textarea to'q foni
+$color-text-white: #FFFFFF;
+$color-text-gray: #8A8A8A;   
+$color-placeholder: #444444; 
+
+.footer-contact {
+  background-color: $color-bg-dark;
+  width: 100%;
+  padding: 80px 0 30px 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 60px;
+    }
+  }
+
+  // --- CHAP TOMON STRUCTURASI ---
+  &__info {
+    flex: 1;
+    max-width: 450px;
+  }
+
+  &__title-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+  }
+
+  &__number {
+    color: $color-orange;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  &__title {
+    color: $color-text-white;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+  }
+
+  // --- ALOQA ELEMENTLARI (Phone, Email, Address) ---
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+
+    &__icon-box {
+      width: 24px;   // Ikonalar uchun toza ajratilgan joy
+      height: 24px;
+      color: $color-orange; // Agar ichiga svg qo'ysangiz qizil bo'ladi
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    &__text-box {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    &__label {
+      color: $color-text-gray;
+      font-size: 14px;
+    }
+
+    &__value {
+      color: $color-text-white;
+      font-size: 16px;
+      text-decoration: none;
+      line-height: 1.4;
+      
+      &[href]:hover {
+        color: $color-orange;
+      }
+    }
+  }
+
+  // --- IJTIMOIY TARMOQLAR (Social Circles) ---
+  &__socials {
+    display: flex;
+    gap: 15px;
+  }
+
+  .social-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #222222; // To'q kulrang doira foni
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-text-white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $color-orange;
+      transform: translateY(-3px);
+    }
+  }
+
+  // --- O'NG TOMON STRUCTURASI (FORMA) ---
+  &__form-box {
+    flex: 1.2;
+  }
+
+  &__form-title {
+    color: $color-text-white;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0 0 40px 0;
+
+    span {
+      color: $color-orange; // "product design work" qismi qizil rangda
+    }
+  }
+
+  // --- FORMA INPUTLARI ---
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    &__row {
+      display: flex;
+      gap: 20px;
+
+      @media (max-width: 576px) {
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+      width: 100%;
+    }
+
+    &__label {
+      color: $color-text-white;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    &__input, &__textarea {
+      background-color: $color-input-bg;
+      border: 1px solid transparent;
+      color: $color-text-white;
+      padding: 15px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+      outline: none;
+      box-sizing: border-box;
+      width: 100%;
+      font-family: sans-serif;
+      transition: border-color 0.3s ease;
+
+      &::placeholder {
+        color: #555555;
+      }
+
+      &:focus {
+        border-color: $color-orange; // Bosilganda cheti qizaradi
+      }
+    }
+
+    &__textarea {
+      min-height: 140px;
+      resize: vertical;
+    }
+
+    &__btn {
+      background-color: $color-orange;
+      color: $color-text-white;
+      border: none;
+      padding: 15px 35px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 4px;
+      cursor: pointer;
+      align-self: flex-start;
+      letter-spacing: 0.8px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: darken($color-orange, 8%);
+      }
+    }
+  }
+
+  // --- ENG PASTDAGI COPYRIGHT ---
+  &__bottom {
+    border-top: 1px solid #222222;
+    margin-top: 80px;
+    padding-top: 30px;
+    text-align: center;
+
+    p {
+      color: $color-text-gray;
+      font-size: 14px;
+      margin: 0;
+
+      strong {
+        color: $color-text-white;
+        font-weight: 600;
+      }
+    }
+  }
 }
