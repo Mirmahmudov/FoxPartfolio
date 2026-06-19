@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "version": 3,
     "mappings": "",
@@ -7,3 +8,6 @@
     "names": [],
     "file": "Service.css"
 }
+=======
+{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"Service.css"}
+>>>>>>> master
